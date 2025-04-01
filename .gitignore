@@ -1,0 +1,9 @@
+
+# sst
+.sst
+
+dist/
+node_modules/
+
+# env
+.envrc.overwrite

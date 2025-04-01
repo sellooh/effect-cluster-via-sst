@@ -1,0 +1,41 @@
+{
+  "name": "effect-cluster-via-sst",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsup",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsx scripts/dev.ts",
+    "execute:shard-manager": "tsx src/shard-manager.ts",
+    "execute:runner": "tsx src/runner.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@effect/cli": "^0.59.2",
+    "@effect/cluster": "^0.29.5",
+    "@effect/platform": "^0.80.2",
+    "@effect/platform-node": "^0.76.5",
+    "@effect/rpc": "^0.55.3",
+    "@effect/sql": "^0.33.2",
+    "@effect/sql-pg": "^0.34.2",
+    "effect": "^3.14.2",
+    "node-fetch": "^3.3.2",
+    "sst": "^3.11.11"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "aws-sdk"
+    ]
+  },
+  "devDependencies": {
+    "@effect/language-service": "^0.4.0",
+    "@types/aws-lambda": "^8.10.148",
+    "prettier": "^3.5.3",
+    "tsup": "^8.4.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}
