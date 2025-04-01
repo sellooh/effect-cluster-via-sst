@@ -139,7 +139,6 @@ export default $config({
         },
       },
     });
-    runner.nodes.taskDefinition.containerDefinitions;
     new sst.aws.Function("MyFunction", {
       vpc,
       url: true,
