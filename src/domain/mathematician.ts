@@ -96,7 +96,7 @@ export const MathematicianLive = Mathematician.toLayer(
     return {
       CalculateFibonacci: Effect.fnUntraced(
         function* (envelope) {
-          if (isSuperstitious() && envelope.payload.target === 13) {
+          if (envelope.payload.target === 13 && isSuperstitious()) {
             yield* Effect.fail(new BadLuckMath());
           }
           if (envelope.payload.target > 15) {
