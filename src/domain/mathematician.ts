@@ -24,6 +24,7 @@ export class ClusterProblem extends Schema.TaggedError<ClusterProblem>(
 
 export const Mathematician = Entity.make("Mathematician", [
   Rpc.make("CalculateFibonacci", {
+    stream: true,
     payload: {
       target: Schema.Int,
     },
